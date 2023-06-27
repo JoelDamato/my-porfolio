@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
 
-      <div className="font-montserrat bg-black/20">
+      <div className="font-montserrat bg-black">
 
       <div className="z-10 fixed top-5 ml-1">
           <div className=" flex flex-col gap-3 rounded-2xl w-10 p-1 bg-white/70" >
@@ -112,7 +112,7 @@ export default function Home() {
 
         </div>
 
-        <section className="pb-20 bg-black/20 -mt-24">
+        <section className="pb-20 bg-black/80 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               
@@ -161,6 +161,7 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
                   
 
 <Carousel/>
+
                 </div>
              
 
@@ -176,35 +177,17 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
 
      </div>
        
+<div className="bg-gray-500">
+        <section className="pb-20 relative block">
+         
 
-        <section className="pb-20 relative block bg-black">
-          <div
-            className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style={{ height: "80px" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="text-gray-900 fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
-
-          <div className="mt-[10%] container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div className="mt-[10%] container mx-auto px-4 lg:pt-24 lg:pb-64 ">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-white">
-                 Contactame
+                <h2 className="text-4xl font-bold tracking-widest font-montserrat text-black">
+                 CONTACTAME
                 </h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                <p className="text-lg leading-relaxed mt-4 mb-4 text-black">
                 Si te parece interesante mi perfil y mis conocimientos te dejo un formulario para que me mandes un mail o sino mi WhatsApp
                 en la esquina superior izquierda.
                 </p>
@@ -213,7 +196,7 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
     
           </div>
         </section>
-        <section className=" relative block py-24 lg:pt-0 bg-black">
+        <section className=" relative block py-24 lg:pt-0">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
@@ -281,6 +264,7 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
             </div>
           </div>
         </section>
+        </div>
       </div>
 
     </>

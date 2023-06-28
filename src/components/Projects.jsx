@@ -30,7 +30,7 @@ export default function Projects() {
 
   return (
     <>
-    <div className="shadow-lg h-[40vh] mt-5 flex flex-col bg-white rounded-lg w-[20%] items-center mr-5">
+    <div className="mob:hidden shadow-lg h-[40vh]  flex flex-col bg-white rounded-2xl w-[25%] items-center mr-3">
     <h6 className="mt-5 text-xl font-semibold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
      <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5" >
@@ -39,14 +39,14 @@ export default function Projects() {
         <Button onClick={()=>setCounter(2)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"  >MINGA</Button>
         <Button onClick={()=>setCounter(3)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" >MINDTECH</Button>
       </ButtonGroup>
-      </div>
+    </div>
 
-      <div className="flex row justify-evenly rounded-2xl items-center shadow-lg w-[67%] h-[50vh] bg-white  md:mt-[10%] lg:mt-1 ">
+      <div className="mob:h-[50%] flex row justify-evenly rounded-2xl items-center shadow-lg w-[67%] h-[50vh] bg-white mob:w-[90%]  ">
         <div className="self-center">
         <img className="w-[3vw]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />
         </div>
         <img
-          className="w-[40%] h-[90%] rounded-lg my-10"
+          className="mob:h-[50%] w-[40%] h-[90%] rounded-lg my-10"
           src={categories[counter]?.image}
           alt=""/>
 

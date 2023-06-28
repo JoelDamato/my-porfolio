@@ -114,11 +114,11 @@ export default function Home() {
         </div>
 
         <section className="pb-20 bg-black/80 -mt-24">
-          <div className="container mx-auto px-4">
+          <div className="container lg:mx-auto lg:px-4 mob:w-full">
             <div className="flex flex-wrap">
               
-              <div className=" mob:ml-5 mob:w-[90%] w-[50%] md:w-4/12 px-4 text-center">
-                <div className="h-[90%] relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div className="mob:w-[100%] w-[50%] md:w-4/12 lg:px-4 text-center">
+                <div className="h-[90%] relative flex flex-col min-w-0  mob:w-[120%] break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                   <h6 className="text-xl font-semibold font-montserrat tracking-widest ">
                       HABILIDADES </h6>
@@ -136,8 +136,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="mob:w-[90%] w-[50vw] md:w-4/12 px-4 text-center">
-                <div className="h-[90%] mob:ml-5 relative flex flex-col min-w-0 break-words bg-white w-[61VW] mb-8 shadow-lg rounded-lg">
+              <div className="mob:w-[100%] w-[50vw] md:w-4/12 md:px-4 text-center">
+                <div className="h-[90%] mob:w-[120%]  relative flex flex-col min-w-0 break-words bg-white w-[61VW] mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <h6 className="text-xl font-semibold font-montserrat tracking-[1vw]  md:ml-[18%] ">
                       SOBRE MI </h6>

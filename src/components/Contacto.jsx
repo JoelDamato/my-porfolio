@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import ReactModal from 'react-modal';
+
 
 
 
@@ -55,7 +55,7 @@ export default function Contacto() {
   };
 
   return (
-    <section className="relative block py-24 lg:pt-0">
+    <section className="mob:mt-[20%] relative block py-24 lg:pt-0">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
           <div className="w-full lg:w-6/12 px-4">

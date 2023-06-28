@@ -53,17 +53,17 @@ export default function Home() {
            
 
               <div className="flex flex-col items-center  w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <img className="w-[18vw] mt-[-10%]" src="https://i.ibb.co/tYyMHkc/J.png" alt="" />
+              <img className=" w-[50%] mt-[-10%]" src="https://i.ibb.co/tYyMHkc/J.png" alt="" />
 
                 <div className="pt-2 w-[100%]  bg-white/50 flex flex-col items-center rounded-lg shadow-lg">
                  
                   <p  className="z-50  mt-4 text-5xl text-black">
                     Full Stack Developer
                   </p>
-                  <h1 className="tracking-[20px] text-black font-bold text-5xl shadow-lg ">
+                  <h1 className="mob:text-lg tracking-[20px] text-black font-bold text-5xl shadow-lg ">
                   DAMATO JOEL
                   </h1>
-                  <img className="absolute right-[23%] w-[7vw] " src="https://images.credly.com/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png" alt="" />
+                  <img className="mob:hidden absolute right-[23%] w-[7vw] " src="https://images.credly.com/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png" alt="" />
 
                   <button
           onClick={handleSeeMore}
@@ -117,8 +117,8 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               
-              <div className="w-[50%] md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div className=" mob:ml-5 mob:w-[90%] w-[50%] md:w-4/12 px-4 text-center">
+                <div className="h-[90%] relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                   <h6 className="text-xl font-semibold font-montserrat tracking-widest ">
                       HABILIDADES </h6>
@@ -136,14 +136,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-[50vw] md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-[61VW] mb-8 shadow-lg rounded-lg">
+              <div className="mob:w-[90%] w-[50vw] md:w-4/12 px-4 text-center">
+                <div className="h-[90%] mob:ml-5 relative flex flex-col min-w-0 break-words bg-white w-[61VW] mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    <h6 className="text-xl font-semibold font-montserrat tracking-[1vw] ml-[18%] ">
+                    <h6 className="text-xl font-semibold font-montserrat tracking-[1vw]  md:ml-[18%] ">
                       SOBRE MI </h6>
                 
   
-                    <div className="flex">
+                    <div className="flex mob:flex-col items-center">
                       <img className="rounded-full w-[10vw]" src="https://i.ibb.co/dPzzCSw/1685723210690.jpg" alt="" />
                      
                    <div className="flex flex-col">
@@ -158,21 +158,22 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
                 </div>
               </div>
               </div>
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-[95%] ml-5 shadow-lg rounded-lg">
-                  
-
-<Carousel/>
-
-                </div>
+                
              
 
               
             </div>
 
           </div>
+          <div className="relative flex flex-col min-w-0 break-words bg-white w-[93.2%] ml-[3.6%]  shadow-lg rounded-lg">
+                  
+
+<Carousel/>
+
+                </div>
         </section>
        
-<div className="flex justify-center">
+<div className="flex justify-center w-full">
 
      <Projects/>
 
@@ -185,10 +186,10 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
           <div className="mt-[10%] container mx-auto px-4 lg:pt-24 lg:pb-64 ">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-bold tracking-widest font-montserrat text-black">
+                <h2 className="mob:hidden text-4xl font-bold tracking-widest font-montserrat text-black">
                  CONTACTAME
                 </h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-black">
+                <p className="mob:hidden text-lg leading-relaxed mt-4 mb-4 text-black">
                 Si te parece interesante mi perfil y mis conocimientos te dejo un formulario para que me mandes un mail o sino mi WhatsApp
                 en la esquina superior izquierda.
                 </p>

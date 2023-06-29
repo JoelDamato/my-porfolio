@@ -56,10 +56,10 @@ export default function Contacto() {
 
   return (
     <section className="mob:mt-[20%] relative block py-24 lg:pt-0">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-          <div className="w-full lg:w-6/12 px-4">
-            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+      <div className="container sm:mx-auto sm:px-4 ">
+        <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48 mob:w-[100vw]  ">
+          <div className="w-full lg:w-6/12 px-4  ">
+            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg mob:w-[100%] bg-gray-300">
               <div className="flex-auto p-5 lg:p-10">
                 <h4 className="text-2xl font-semibold">Formulario de Contacto</h4>
                 <div className="relative w-full mb-3 mt-8">

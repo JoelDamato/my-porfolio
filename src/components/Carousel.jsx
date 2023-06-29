@@ -6,11 +6,11 @@ const Carousel = () => {
   
     return (
         <div className=" vpx-4 py-5 mob:flex-col w-[20%] flex items-center gap-5">
-            <h6 className="mob:ml-[75vw] ml-[10%] text-xl font-semibold font-montserrat tracking-widest">
+            <h6 className="mob:ml-[400%] ml-[10%] text-xl font-semibold font-montserrat tracking-widest">
                 TECNOLOGIAS
             </h6>
 
-            <div className="flex mob:flex-wrap mob:w-[80vw] mob:ml-[80vw] mob:min-h-[20%] mt-4 mb-4 text-gray-600 gap-8 ml-10 h-13">
+            <div className="flex mob:flex-wrap mob:w-[80vw] mob:ml-[450%] mob:min-h-[20%] mt-4 mb-4 text-gray-600 gap-8 ml-10 h-13">
                
                     
                     <Tooltip content="REACT" placement="bottom">
@@ -105,7 +105,7 @@ const Carousel = () => {
                         </Tooltip>
                         <Tooltip content="BOOTSTRAP" placement="bottom">
                         <img
-                            className="w-[8%] h-[6vh] hover:animate-bounce"
+                            className="w-[10%] h-[6vh] hover:animate-bounce"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"                            alt=""
                         />
                         </Tooltip>

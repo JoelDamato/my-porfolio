@@ -60,7 +60,7 @@ export default function Home() {
                   <p  className="z-50  mt-4 text-5xl text-black">
                     Full Stack Developer
                   </p>
-                  <h1 className="mob:text-lg tracking-[20px] text-black font-bold text-5xl shadow-lg ">
+                  <h1 className="mob:text-lg mob:ml-3 tracking-[20px] text-black font-bold text-5xl shadow-lg ">
                   DAMATO JOEL
                   </h1>
                   <img className="mob:hidden absolute right-[23%] w-[7vw] " src="https://images.credly.com/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png" alt="" />
@@ -113,12 +113,12 @@ export default function Home() {
 
         </div>
 
-        <section className="pb-20 bg-black/80 -mt-24">
+        <section className="pb-20 bg-black/80 mob:flex mob:flex-col mob:items-center">
           <div className="container lg:mx-auto lg:px-4 mob:w-full">
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap ">
               
               <div className="mob:w-[100%] w-[50%] md:w-4/12 lg:px-4 text-center">
-                <div className="h-[90%] relative flex flex-col min-w-0  mob:w-[120%] break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div className="h-[90%] relative flex flex-col min-w-0  mob:w-[100%] break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                   <h6 className="text-xl font-semibold font-montserrat tracking-widest ">
                       HABILIDADES </h6>
@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mob:w-[100%] w-[50vw] md:w-4/12 md:px-4 text-center">
-                <div className="h-[90%] mob:w-[120%]  relative flex flex-col min-w-0 break-words bg-white w-[61VW] mb-8 shadow-lg rounded-lg">
+                <div className="h-[90%] mob:w-[100%]  relative flex flex-col min-w-0 break-words bg-white w-[61VW] mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <h6 className="text-xl font-semibold font-montserrat tracking-[1vw]  md:ml-[18%] ">
                       SOBRE MI </h6>
@@ -165,7 +165,7 @@ Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es
             </div>
 
           </div>
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-[93.2%] ml-[3.6%]  shadow-lg rounded-lg">
+          <div className="relative flex flex-col min-w-0 break-words bg-white mob:w-[82%] w-[93.2%] sm:ml-[3.6%]  shadow-lg rounded-lg">
                   
 
 <Carousel/>

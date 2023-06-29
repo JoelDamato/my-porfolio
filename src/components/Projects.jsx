@@ -9,8 +9,8 @@ export default function Projects() {
   let categories= [
     {"image":"https://i.ibb.co/kmxztP6/2023-06-27.png","description":"Desarolle esta web individualmente, utilizando HTML, CSS, JAVASCRIPT VANILLA. La funcionalidad de la pagina es poder aportar datos a su cliente, filtar por un buscador o check. Ademas de estadisticas y datos de cada evento individualmente,","name":"AMAZING","color":"violet","code":"https://github.com/JoelDamato/Amazing-Events","web":""},
     {"image":"https://i.ibb.co/ZmHvGHN/2023-06-27-3.png","description":"Desarrollo de una web, aplicando metodología AGILE para la organización del trabajo en grupo. Utilizamos tecnologías HTML, CSS, Boostrap, los datos del producto fueron consumidos de la API provista por el cliente. Dentro de las funcionalidades de la web, generamos una página dinámica, seccionada en hogar, juguetes, farmacia, contacto y forma de pago. Además, incorporamos la opción de agregar o quitar productos al carrito de compras.","name":"PETSHOP","color":"gray","code":"https://github.com/JoelDamato/Petshop-HappyPets","web":"https://pet-shop-ashy.vercel.app/"},
-    {"image":"https://i.ibb.co/CQH2rk6/2023-06-27-4.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINGA","color":"red","code":"https://github.com/JoelDamato/Minga_green_front","web":"https://minga-verde-front-olive.vercel.app/"},
-    {"image":"https://i.ibb.co/m476tqk/2023-06-27-1.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINDTECH","color":"green","code":"https://github.com/JoelDamato/Mindtech-web-front","web":"www.mindtech.store"},
+    {"image":"https://i.ibb.co/CQH2rk6/2023-06-27-4.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINGA","color":"red","code":"https://github.com/JoelDamato/Minga_green_front","web":""},
+    {"image":"https://i.ibb.co/m476tqk/2023-06-27-1.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINDTECH","color":"green","code":"https://github.com/JoelDamato/Mindtech-web-front","web":"https://mindtech.store"},
 ]
 
   let [counter,setCounter] = useState(0)
@@ -41,16 +41,18 @@ export default function Projects() {
       </ButtonGroup>
     </div>
 
-      <div className="mob:h-[50%] flex row justify-evenly rounded-2xl items-center shadow-lg w-[67%] h-[50vh] bg-white mob:w-[90%]  ">
+      <div className="mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-2xl items-center shadow-lg w-[70%] h-[50vh] bg-white   ">
+        
         <div className="self-center">
-        <img className="w-[3vw]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />
+        <img className="w-[3vw] mob:w-[10%]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />
         </div>
+
         <img
-          className="mob:h-[50%] w-[40%] h-[90%] rounded-lg my-10"
+          className="mob:h-[80%] mob:w-[100%]  w-[40%] h-[90%] rounded-lg sm:my-10"
           src={categories[counter]?.image}
           alt=""/>
 
-        <div className="w-[40%] h-[40%] flex flex-col justify-center items-center p-[1rem]">
+        <div className="mob:w-[100%] w-[100%] h-[40%] flex flex-col justify-center items-center p-[1rem]">
           <h1 className="p-2 text-black text-[2rem] rounded-lg tracking-widest font-montserrat"  style={{color:categories[counter]?.color}} > {categories[counter]?.name.charAt(0).toUpperCase()+categories[counter]?.name.slice(1)}</h1>
           <p className="text-black text-[0.7rem] lg:text-[1rem]">
             {categories[counter]?.description}
@@ -68,13 +70,7 @@ export default function Projects() {
         </div>
         
         <div className="self-center">
-
-
-
-
-
-
-<img className="w-[3vw]" src="https://i.ibb.co/2nQh4HT/angulo-doble-pequeno-derecho.png" onClick={sumar} alt="" />
+<img className="w-[3vw] mob:w-[10%] mob:ml-[90%]" src="https://i.ibb.co/2nQh4HT/angulo-doble-pequeno-derecho.png" onClick={sumar} alt="" />
         </div>
       </div>
     </>

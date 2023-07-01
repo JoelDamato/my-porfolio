@@ -14,6 +14,7 @@ export default {
         'home': "url('https://imageup.me/images/ad65b05b-f279-44f6-9e79-137e211443d0.jpeg?v=26')",
       }
     },
+    
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
     },

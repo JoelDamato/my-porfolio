@@ -55,11 +55,8 @@ export default function Contacto() {
   };
 
   return (
-    <section className="mob:mt-[20%] relative block py-24 lg:pt-0">
-      <div className="container sm:mx-auto sm:px-4 ">
-        <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48 mob:w-[100vw]  ">
-          <div className="w-full lg:w-6/12 px-4  ">
-            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg mob:w-[100%] bg-gray-300">
+
+            <div className="relative flex flex-col  w-[90%] lg:w-[60%] mb-6 shadow-lg rounded-lg  bg-gray-300">
               <div className="flex-auto p-5 lg:p-10">
                 <h4 className="text-2xl font-semibold">Formulario de Contacto</h4>
                 <div className="relative w-full mb-3 mt-8">
@@ -116,39 +113,38 @@ export default function Contacto() {
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            
     {modalOpen && (
 
-              <div className="fixed inset-0 flex items-center justify-center z-50 mob:[80vw] ">
-                <div className="border-[1px] border-gray-500 bg-white/80 w-[30%] mob:w-[80%] shadow-md rounded-lg h-[22%]  flex flex-col justify-evenly items-center">
-                  <div className="p-4 w-[80%] flex flex-col items-center">
-                    {/* Contenido del modal */}
+<div className="fixed inset-0 flex items-center justify-center z-50 mob:[80vw] ">
+  <div className="border-[1px] border-gray-500 bg-white/80 w-[30%] mob:w-[80%] shadow-md rounded-lg h-[22%]  flex flex-col justify-evenly items-center">
+    <div className="p-4 w-[80%] flex flex-col items-center">
+      {/* Contenido del modal */}
 
-                    <p className="mb-4 ">{respuesta}</p>
+      <p className="mb-4 ">{respuesta}</p>
 
-                    {/* Botón para cerrar el modal */}
-                    <div className="flex justify-evenly w-[80%]">
+      {/* Botón para cerrar el modal */}
+      <div className="flex justify-evenly w-[80%]">
 
-                    
-                      <button
-                        onClick={closeModal}
-                        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-            )}
+      
+        <button
+          onClick={closeModal}
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+)}
 
 
 
-  </section>
+          </div>
+
+
   
   )
 }

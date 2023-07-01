@@ -30,8 +30,9 @@ export default function Projects() {
 
   return (
     <>
-    <div className="mob:hidden shadow-lg h-[40vh]  flex flex-col bg-white rounded-2xl w-[25%] items-center mr-3">
-    <h6 className="mt-5 text-xl font-semibold font-montserrat tracking-widest ">
+    
+    <div className="mob:hidden shadow-lg   flex flex-col bg-white rounded-lg w-[22%] min-h-[20%] items-center ">
+    <h6 className="mt-5 text-xl text-center font-semibold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
      <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5" >
         <Button onClick={()=>setCounter(0)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" >AMAZING</Button>
@@ -41,7 +42,7 @@ export default function Projects() {
       </ButtonGroup>
     </div>
 
-      <div className="mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-2xl items-center shadow-lg w-[70%] h-[50vh] bg-white   ">
+      <div className="mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-lg items-center shadow-lg w-[70.7%] h-[50vh] bg-white   ">
         
         <div className="self-center">
         <img className="w-[3vw] mob:w-[10%]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />
@@ -73,6 +74,7 @@ export default function Projects() {
 <img className="w-[3vw] mob:w-[10%] mob:ml-[90%]" src="https://i.ibb.co/2nQh4HT/angulo-doble-pequeno-derecho.png" onClick={sumar} alt="" />
         </div>
       </div>
+
     </>
   );
 }

@@ -1,12 +1,35 @@
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
 import Contacto from "../components/Contacto";
 
-import { Tooltip } from "@material-tailwind/react";
+
+import { Tooltip,Switch } from "@material-tailwind/react";
+
 
 export default function Home() {
+
+  const [darkMode, setDarkMode] = useState(false)
+
+
+
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem("darkMode");
+    if (savedDarkMode) {
+      setDarkMode(JSON.parse(savedDarkMode));
+    }
+  }, []);
+
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleSeeMore = () => {
@@ -20,10 +43,12 @@ export default function Home() {
   return (
     <>
 
-      <div className="font-montserrat bg-black">
+
+      <div className= {`font-montserrat ${darkMode ? 'bg-black ' : 'bg-gray-400'} `}>
 
         <div className="z-10 fixed top-5 ml-1">
-          <div className=" flex flex-col gap-3 rounded-2xl w-10 p-1 bg-white/70" >
+          <div className={` ${darkMode ? ' text-white bg-gray-700/20 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-2xl w-10 p-1 `} >
+
             <Tooltip content="WHATSAPP" placement="right">
               <a aria-label="Chat on WhatsApp" href="https://wa.me/1553743607"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
             </Tooltip>
@@ -57,12 +82,14 @@ export default function Home() {
               <div className="flex flex-col items-center  w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <img className=" w-[50%] mt-[-10%]" src="https://i.ibb.co/tYyMHkc/J.png" alt="" />
 
-                <div className="pt-2 w-[100%]  bg-white/50 flex flex-col items-center rounded-lg shadow-lg">
 
-                  <p className="z-50  mt-4 text-5xl text-black">
+                <div className={`pt-2 w-[100%] ${darkMode ? 'bg-black/80 border-[1px] border-violet-950 ' : ' bg-white/50'} flex flex-col items-center rounded-lg shadow-lg `}>
+
+                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-5xl  text-black`}>
                     Full Stack Developer
                   </p>
-                  <h1 className="mob:text-lg mob:ml-3 tracking-[20px] text-black font-bold text-5xl shadow-lg ">
+                  <h1 className={`${darkMode ? ' text-violet-700' : ''} mob:text-lg mob:ml-3 tracking-[20px] text-black font-bold text-5xl shadow-lg `}>
+
                     DAMATO JOEL
                   </h1>
                   <img className="mob:hidden absolute right-[6vw]  lg:right-[21vw] w-[7%] 2xl:right-[14vw] " src="https://images.credly.com/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png" alt="" />
@@ -92,26 +119,46 @@ export default function Home() {
 
             </div>
           </div>
+
         </div>
 
-        <section className="relative w-full min-h-[100%] pt-5  pb-10 mt-[-5%] bg-white/20 mob:flex mob:flex-col mob:items-center">
+        <section className="relative w-full min-h-[100%] pt-5  pb-10 mt-[-5%] mob:flex mob:flex-col mob:items-center">
+ <div className="w-full h-[10vh] pb-4  flex justify-center items-center ">
+  <div className={`flex justify-center gap-2 items-center rounded-lg p-2 ${darkMode ? 'bg-gray-700/20 border-[1px] border-violet-950 text-violet-800' : 'bg-white'}`}>
+  Modo Dark 
+ <button
+      className={`flex items-center justify-between w-16 h-8 rounded-full p-1 transition-colors ${
+        darkMode ? 'bg-violet-800' : 'bg-gray-300'
+      }`}
+      onClick={toggleDarkMode}
+    >
+      <span
+        className={`inline-block w-6 h-6 rounded-full transition-transform transform ${
+          darkMode ? 'translate-x-8' : 'translate-x-1'
+        } bg-white`}
+      ></span>
+    </button>
+    </div>
 
-          <About />
-          <Carousel />
+        </div>
+          <About dark={darkMode} />
+          <Carousel dark={darkMode} />
           <div className="gap-2 mt-5 flex justify-center w-full">
 
-            <Projects />
 
+            <Projects dark={darkMode} />
+           
           </div>
 
         </section>
 
 
 
-        <div className="flex justify-center bg-white/50 pt-[10vh]">
+        <div className={`flex justify-center ${darkMode ? 'bg-black' : 'bg-gray-400'}  pt-[10vh]`}>
 
 
-          <Contacto />
+          <Contacto dark={darkMode} />
+
 
         </div>
 

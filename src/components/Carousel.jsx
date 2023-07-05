@@ -4,9 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Tooltip } from "@material-tailwind/react";
 
+export default function Carousel( darkMode ) {
 
-export default class AutoPlay extends Component {
-  render() {
     const settings = {
       
       infinite: true,
@@ -19,7 +18,9 @@ export default class AutoPlay extends Component {
     };
     return (
         <div className="w-full flex justify-center">
-      <div className="bg-white shadow-lg rounded-lg w-[93.2%] mob:w-[90%]  p-10 ">
+
+      <div className={` shadow-lg rounded-lg w-[93.2%] mob:w-[90%]  p-10 ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'}`}>
+
  <h6 className="text-xl pb-5 font-semibold text-center font-montserrat tracking-[1vw]  ">
               TECNOLOGIAS</h6>
 
@@ -128,4 +129,4 @@ export default class AutoPlay extends Component {
       </div>
     );
   }
-}
+

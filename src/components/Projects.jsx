@@ -4,7 +4,7 @@ import { ButtonGroup, Button } from "@material-tailwind/react";
 
 
 
-export default function Projects() {
+export default function Projects(darkMode) {
 
   let categories= [
     {"image":"https://i.ibb.co/kmxztP6/2023-06-27.png","description":"Desarolle esta web individualmente, utilizando HTML, CSS, JAVASCRIPT VANILLA. La funcionalidad de la pagina es poder aportar datos a su cliente, filtar por un buscador o check. Ademas de estadisticas y datos de cada evento individualmente,","name":"AMAZING","color":"violet","code":"https://github.com/JoelDamato/Amazing-Events","web":""},
@@ -31,18 +31,22 @@ export default function Projects() {
   return (
     <>
     
-    <div className="mob:hidden shadow-lg   flex flex-col bg-white rounded-lg w-[22%] min-h-[20%] items-center ">
+
+    <div className={` mob:hidden shadow-lg   flex flex-col ${darkMode.dark ? 'bg-gray-700/30 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'} bg-white/80 rounded-lg w-[22%] min-h-[20%] items-center `}>
+
     <h6 className="mt-5 text-xl text-center font-semibold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
      <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5" >
-        <Button onClick={()=>setCounter(0)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" >AMAZING</Button>
-        <Button onClick={()=>setCounter(1)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"  >PETSHOP</Button>
-        <Button onClick={()=>setCounter(2)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"  >MINGA</Button>
-        <Button onClick={()=>setCounter(3)} className="shadow-lg bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" >MINDTECH</Button>
+        <Button onClick={()=>setCounter(0)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`} >AMAZING</Button>
+        <Button onClick={()=>setCounter(1)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`}>PETSHOP</Button>
+        <Button onClick={()=>setCounter(2)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`} >MINGA</Button>
+        <Button onClick={()=>setCounter(3)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`}>MINDTECH</Button>
       </ButtonGroup>
     </div>
 
-      <div className="mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-lg items-center shadow-lg w-[70.7%] h-[50vh] bg-white   ">
+
+      <div className={` mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-lg items-center shadow-lg w-[70.7%] h-[50vh] ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-black'} `}>
+
         
         <div className="self-center">
         <img className="w-[3vw] mob:w-[10%]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />
@@ -54,16 +58,16 @@ export default function Projects() {
           alt=""/>
 
         <div className="mob:w-[100%] w-[100%] h-[40%] flex flex-col justify-center items-center p-[1rem]">
-          <h1 className="p-2 text-black text-[2rem] rounded-lg tracking-widest font-montserrat"  style={{color:categories[counter]?.color}} > {categories[counter]?.name.charAt(0).toUpperCase()+categories[counter]?.name.slice(1)}</h1>
-          <p className="text-black text-[0.7rem] lg:text-[1rem]">
+          <h1 className="p-2  text-[2rem] rounded-lg tracking-widest font-montserrat"  > {categories[counter]?.name.charAt(0).toUpperCase()+categories[counter]?.name.slice(1)}</h1>
+          <p className=" text-[0.7rem] lg:text-[1rem]">
             {categories[counter]?.description}
           </p>
           <div class="mt-5 inline-flex">
-<a href={categories[counter]?.code}>  <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+<a href={categories[counter]?.code}>  <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`}>
     Codigo
   </button></a>
 
-  <a href={categories[counter]?.web}> <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+  <a href={categories[counter]?.web}> <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-6 rounded-l`}>
     Web
   </button></a>
  

@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
 import Contacto from "../components/Contacto";
 
-import { Tooltip,Switch } from "@material-tailwind/react";
+import { Tooltip} from "@material-tailwind/react";
 
 export default function Home() {
 
@@ -40,10 +40,10 @@ export default function Home() {
   return (
     <>
 
-      <div className= {`font-montserrat ${darkMode ? 'bg-black ' : 'bg-gray-400'} `}>
+      <div className= {`font-montserrat ${darkMode ? 'bg-gradient-to-r from-black via-violet-950 to-black ' : 'bg-gradient-to-r from-gray-400 via-gray-500 to-gray-400'} `}>
 
         <div className="z-10 fixed top-5 ml-1">
-          <div className={` ${darkMode ? ' text-white bg-gray-700/20 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-2xl w-10 p-1 `} >
+          <div className={` ${darkMode ? ' text-white bg-violet-800/50 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-2xl w-10 p-1 `} >
             <Tooltip content="WHATSAPP" placement="right">
               <a aria-label="Chat on WhatsApp" href="https://wa.me/1553743607"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
             </Tooltip>
@@ -89,7 +89,7 @@ export default function Home() {
 
                   <button
                     onClick={handleSeeMore}
-                    className=" animate-bounce bg-white rounded-full mt-5 p-1 mb-[-2%]"
+                    className={`${darkMode ? ' bg-black text-violet-800 border-[1px] border-gray-600/20' : 'bg-white text-black'} animate-bounce  rounded-full mt-5 p-1 mb-[-2%]`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -126,9 +126,16 @@ export default function Home() {
     >
       <span
         className={`inline-block w-6 h-6 rounded-full transition-transform transform ${
-          darkMode ? 'translate-x-8' : 'translate-x-1'
+          darkMode ? 'translate-x-8' : 'translate-x-1 '
         } bg-white`}
-      ></span>
+      >
+        {darkMode ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+    </svg>:      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+</svg>}
+   
+    </span>
     </button>
     </div>
         </div>
@@ -144,7 +151,7 @@ export default function Home() {
 
 
 
-        <div className={`flex justify-center ${darkMode ? 'bg-black' : 'bg-gray-400'}  pt-[10vh]`}>
+        <div className={`flex justify-center  pt-[10vh]`}>
 
 
           <Contacto dark={darkMode} />

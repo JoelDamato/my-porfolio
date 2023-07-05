@@ -64,7 +64,7 @@ export default function Home() {
           style={{
             minHeight: "120vh"
           }}>
-          <div className="absolute top-0 w-full h-full bg-center bg-cover"
+          <div className={` absolute top-0 w-full h-full ${darkMode? "opacity-50 ":""} bg-center bg-cover`}
             style={{
               backgroundImage: "url('https://i.ibb.co/GtRb0hx/fondo.png')"
             }}>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="relative w-full min-h-[100%] pt-5  pb-10 mt-[-5%] mob:flex mob:flex-col mob:items-center">
+        <section className="mob:mt-[-25%] relative w-full min-h-[100%] pt-5  pb-10 mt-[-5%] mob:flex mob:flex-col mob:items-center">
  <div className="w-full h-[10vh] pb-4  flex justify-center items-center ">
   <div className={`flex justify-center gap-2 items-center rounded-lg p-2 ${darkMode ? 'bg-gray-700/20 border-[1px] border-violet-950 text-violet-800' : 'bg-white'}`}>
   Modo Dark 

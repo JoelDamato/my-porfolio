@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 
 
-export default function Contacto() {
+export default function Contacto(darkMode) {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [mensaje, setMensaje] = useState('');
@@ -56,7 +56,7 @@ export default function Contacto() {
 
   return (
 
-            <div className="relative flex flex-col  w-[90%] lg:w-[60%] mb-6 shadow-lg rounded-lg  bg-gray-300">
+            <div className={` relative flex flex-col  w-[90%] lg:w-[60%] mb-6 shadow-lg rounded-lg  ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 text-violet-800' : 'bg-gray-300'}`}>
               <div className="flex-auto p-5 lg:p-10">
                 <h4 className="text-2xl font-semibold">Formulario de Contacto</h4>
                 <div className="relative w-full mb-3 mt-8">
@@ -65,7 +65,7 @@ export default function Contacto() {
                   </label>
                   <input
                     type="text"
-                    className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'} border-0 px-3 py-3  text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
                     placeholder="Nombre"
                     style={{ transition: 'all .15s ease' }}
                     value={nombre}
@@ -79,7 +79,7 @@ export default function Contacto() {
                   </label>
                   <input
                     type="email"
-                    className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'}  border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
                     placeholder="Email"
                     style={{ transition: 'all .15s ease' }}
                     value={email}
@@ -97,7 +97,7 @@ export default function Contacto() {
                 <textarea
                   rows="4"
                   cols="80"
-                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'} border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
                   placeholder="escribe un mensaje..."
                   onChange={(e) => setMensaje(e.target.value)}
                 />
@@ -105,7 +105,7 @@ export default function Contacto() {
               <div className="text-center mt-6">
                 <button
                   onClick={handleSubmit}
-                  className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                  className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'bg-gray-900 text-white'}   active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1`}
                   type="button"
                   style={{ transition: "all .15s ease" }}
                 >
@@ -131,7 +131,7 @@ export default function Contacto() {
           onClick={closeModal}
           className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
         >
-          Close
+          Cerrar
         </button>
       </div>
     </div>

@@ -56,7 +56,9 @@ export default function Contacto(darkMode) {
 
   return (
 
+
             <div className={` relative flex flex-col  w-[90%] lg:w-[60%] mb-6 shadow-lg rounded-lg  ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 text-violet-800' : 'bg-gray-300'}`}>
+
               <div className="flex-auto p-5 lg:p-10">
                 <h4 className="text-2xl font-semibold">Formulario de Contacto</h4>
                 <div className="relative w-full mb-3 mt-8">
@@ -117,7 +119,9 @@ export default function Contacto(darkMode) {
     {modalOpen && (
 
 <div className="fixed inset-0 flex items-center justify-center z-50 mob:[80vw] ">
+
   <div className={`border-[1px] ${darkMode.dark ? 'bg-black/50 border-[1px] border-violet-950 text-violet-800' : ' border-gray-500 '}  w-[30%] mob:w-[80%] shadow-md rounded-lg h-[22%]  flex flex-col justify-evenly items-center`}>
+
     <div className="p-4 w-[80%] flex flex-col items-center">
       {/* Contenido del modal */}
 
@@ -131,7 +135,9 @@ export default function Contacto(darkMode) {
           onClick={closeModal}
           className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
         >
+
           Cerrar
+
         </button>
       </div>
     </div>

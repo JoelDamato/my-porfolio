@@ -31,7 +31,9 @@ export default function Projects(darkMode) {
   return (
     <>
     
+
     <div className={` mob:hidden shadow-lg   flex flex-col ${darkMode.dark ? 'bg-gray-700/30 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'} bg-white/80 rounded-lg w-[22%] min-h-[20%] items-center `}>
+
     <h6 className="mt-5 text-xl text-center font-semibold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
      <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5" >
@@ -42,7 +44,9 @@ export default function Projects(darkMode) {
       </ButtonGroup>
     </div>
 
+
       <div className={` mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-lg items-center shadow-lg w-[70.7%] h-[50vh] ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-black'} `}>
+
         
         <div className="self-center">
         <img className="w-[3vw] mob:w-[10%]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />

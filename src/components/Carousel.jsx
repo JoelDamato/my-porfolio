@@ -18,7 +18,9 @@ export default function Carousel( darkMode ) {
     };
     return (
         <div className="w-full flex justify-center">
+
       <div className={` shadow-lg rounded-lg w-[93.2%] mob:w-[90%]  p-10 ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'}`}>
+
  <h6 className="text-xl pb-5 font-semibold text-center font-montserrat tracking-[1vw]  ">
               TECNOLOGIAS</h6>
 
@@ -127,3 +129,4 @@ export default function Carousel( darkMode ) {
       </div>
     );
   }
+

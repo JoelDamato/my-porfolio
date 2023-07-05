@@ -31,7 +31,7 @@ export default function Projects(darkMode) {
   return (
     <>
     
-    <div className={` mob:hidden shadow-lg   flex flex-col ${darkMode.dark ? 'bg-black/30   text-violet-800' : 'bg-white/80'} bg-white/80 rounded-lg w-[22%] min-h-[20%] items-center `}>
+    <div className={` mob:hidden shadow-lg   flex flex-col ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'} rounded-lg w-[22%] min-h-[20%] items-center `}>
     <h6 className="mt-5 text-xl text-center font-semibold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
      <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5" >
@@ -49,7 +49,7 @@ export default function Projects(darkMode) {
         </div>
 
         <img
-          className="mob:h-[80%] mob:w-[100%]  w-[40%] h-[90%] rounded-lg sm:my-10"
+          className=" border-violet-950 mob:h-[80%] mob:w-[100%]  w-[40%] h-[90%] rounded-lg sm:my-10"
           src={categories[counter]?.image}
           alt=""/>
 

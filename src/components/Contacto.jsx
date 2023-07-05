@@ -65,7 +65,7 @@ export default function Contacto(darkMode) {
                   </label>
                   <input
                     type="text"
-                    className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'} border-0 px-3 py-3  text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
+                    className={` ${darkMode.dark ? 'bg-gray-700/30 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'} border-0 px-3 py-3  text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
                     placeholder="Nombre"
                     style={{ transition: 'all .15s ease' }}
                     value={nombre}
@@ -79,7 +79,7 @@ export default function Contacto(darkMode) {
                   </label>
                   <input
                     type="email"
-                    className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'}  border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
+                    className={` ${darkMode.dark ? 'bg-gray-700/30 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'}  border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
                     placeholder="Email"
                     style={{ transition: 'all .15s ease' }}
                     value={email}
@@ -97,7 +97,7 @@ export default function Contacto(darkMode) {
                 <textarea
                   rows="4"
                   cols="80"
-                  className={` ${darkMode.dark ? 'bg-gray-700/20 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'} border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
+                  className={` ${darkMode.dark ? 'bg-gray-700/30 border-[1px] border-violet-950 placeholder-gray-400/20' : 'placeholder-gray-400'} border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full`}
                   placeholder="escribe un mensaje..."
                   onChange={(e) => setMensaje(e.target.value)}
                 />
@@ -117,7 +117,7 @@ export default function Contacto(darkMode) {
     {modalOpen && (
 
 <div className="fixed inset-0 flex items-center justify-center z-50 mob:[80vw] ">
-  <div className="border-[1px] border-gray-500 bg-white/80 w-[30%] mob:w-[80%] shadow-md rounded-lg h-[22%]  flex flex-col justify-evenly items-center">
+  <div className={`border-[1px] ${darkMode.dark ? 'bg-black/50 border-[1px] border-violet-950 text-violet-800' : ' border-gray-500 '}  w-[30%] mob:w-[80%] shadow-md rounded-lg h-[22%]  flex flex-col justify-evenly items-center`}>
     <div className="p-4 w-[80%] flex flex-col items-center">
       {/* Contenido del modal */}
 

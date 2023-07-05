@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
@@ -9,6 +9,20 @@ import { Tooltip,Switch } from "@material-tailwind/react";
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false)
+
+
+
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem("darkMode");
+    if (savedDarkMode) {
+      setDarkMode(JSON.parse(savedDarkMode));
+    }
+  }, []);
+
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)

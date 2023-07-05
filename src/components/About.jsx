@@ -25,7 +25,9 @@ export default function About(darkMode) {
         </div>
       </div>
       <div className="mob:w-[90%] w-[60%]   text-center mob:items-center">
+
         <div className={`h-[90%] mob:w-[100%]  flex flex-col min-w-0 ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'}  mb-8 shadow-lg rounded-lg`}>
+
           <div className="px-4 py-5 flex-auto">
             <h6 className="md:pl-[16%] text-xl font-semibold font-montserrat tracking-[1vw]  ">
               SOBRE MI </h6>

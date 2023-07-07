@@ -64,15 +64,19 @@ export default function Carousel( darkMode ) {
                     
                         <Tooltip content="JAVASCRIPT" placement="bottom">
                         <img
+
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.png"
+
                             alt=""
                         />
                         </Tooltip>
                         <Tooltip content="HTML" placement="bottom">
                         <img
+
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMuXIKOZAg4Yjpx49EpGZz6NECbSLQpl22MQ&usqp=CAU"
+
                             alt=""
                         />
                         </Tooltip>
@@ -80,12 +84,14 @@ export default function Carousel( darkMode ) {
                         <img
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/512px-CSS3_logo.svg.png?20210705212817"                            alt=""
+
                         />
                         </Tooltip>
                         
                         <Tooltip content="REDUX" placement="bottom">
                         <img
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+
                             src="https://www.svgrepo.com/show/303557/redux-logo.svg"                            alt=""
                         />
                         </Tooltip>
@@ -132,6 +138,7 @@ export default function Carousel( darkMode ) {
                         <img
                             className="rounded-full w-[5vw]  mob:h-[7vh] mob:w-[9vw] h-[5vh] lg:w-[3vw] lg:h-[3vw]"
                             src="https://img2.freepng.es/20190610/gou/kisspng-microsoft-azure-sql-database-microsoft-azure-sql-d-postani-spletni-razvijalec-izberite-svojo-uno-5cfe7bd5b6e377.6992930615601817177491.jpg"
+
                             alt=""
                         />
                         
@@ -139,31 +146,39 @@ export default function Carousel( darkMode ) {
                         <Tooltip content="MONGO" placement="bottom">
                         
                         <img
+
                             className="rounded-full w-[5vw]  mob:h-[7vh] mob:w-[9vw] h-[5vh] lg:w-[3vw] lg:h-[3vw]"
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMRzP2i8h_xIFrtbyJvXy29eTCtyUpwIrzg&usqp=CAU"
+
                             alt=""
                         />
                         
                         </Tooltip>
                         <Tooltip content="EXPRESS"  placement="bottom">
                         <img
+
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw]  lg:w-[3vw] lg:h-[3vw]"
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR2dM_4ZceKe2hpJ-4k-gEOZKn1f8JPr_ARhbMPDjjUyu3oLS7zEA3wZGzjrxt0NU6BRY&usqp=CAU"
                             alt=""
+
                         />
                         </Tooltip>
                         <Tooltip content="NODE" placement="bottom">
                         <img
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oDlqsGZafPOdrWATbpoIQ8w2IMxT5XRY4w&usqp=CAU"
                             alt=""
+
                         />
                         </Tooltip>
                         <Tooltip content="JAVASCRIPT" placement="bottom">
                         <img
+
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.png"
                             alt=""
+
                         />
                         </Tooltip>
                         
@@ -199,6 +214,7 @@ export default function Carousel( darkMode ) {
                         <img
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png"                            alt=""
+
                         />
                         </Tooltip>
                         <Tooltip content="FIGMA" placement="bottom">
@@ -213,16 +229,20 @@ export default function Carousel( darkMode ) {
                             src="https://play-lh.googleusercontent.com/CiGs15N1e1tXrSnVLEY9jOnKi1oNzPQNRjqhR8fXE0pnu_bRyNmfc8xXr2VQUJTfJ9A=s48-rw"                             alt=""
                         />
                         </Tooltip>
+
                         <Tooltip content="GITHUB" placement="bottom">
                         <img
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"                            alt=""
+
                         />
                         </Tooltip>
                         <Tooltip content="GIT" placement="bottom">
                         <img
+
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[8vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://git-scm.com/images/logos/logomark-orange@2x.png"                            alt=""
+
                         />
                         </Tooltip>
                         </Slider>

@@ -1,5 +1,4 @@
 import React from 'react'
-import TypeWriterEffect from 'react-typewriter-effect';
 import {
   Avatar,
   Button,
@@ -51,27 +50,11 @@ export default function About(darkMode) {
              
               <div className="flex flex-col">
                 <p className="p-4 mt-2 mb-4 text-lg  text-justify font-semibold">
-                  <p ><TypeWriterEffect
-            textStyle={{ fontFamily: 'Red Hat Display' }}
-            startDelay={40}
-            cursorColor="black"
-            hideCursorAfterText="true"
-            text="Me dicen J y tengo 27 años."
-            typeSpeed={100}
-            scrollArea={myRef}
-         
-          /></p>
-                  <TypeWriterEffect
-            textStyle={{ fontFamily: 'Red Hat Display' }}
-            startDelay={3500}
-            cursorColor="black"
-            text="Soy Desarrollador Full Stack, especializado en MERN
+                  <p >Me dicen J y tengo 27 años.Soy Desarrollador Full Stack, especializado en MERN
             (Mongo, Express, React y Node).
             Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es una forma de facilitar la vida humana, está presente en todo lo que hacemos.
-          "
-            typeSpeed={70}
-            scrollArea={myRef}
-          />
+          
+               </p>
                </p>
            
               </div>

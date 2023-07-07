@@ -107,7 +107,7 @@ export default function Home() {
 
                 <div className={`pt-2 w-[100%] ${darkMode ? 'bg-black/80 border-[1px] border-violet-950 ' : ' bg-white/50'} flex flex-col text-center items-center justify-center rounded-lg shadow-lg `}>
 
-                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-3xl flex justify-center font-montserrat  text-black`}>
+                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-lg sm:text-3xl flex justify-center font-montserrat  text-black`}>
                   <TypeWriterEffect
         hideCursorAfterText="false"
         startDelay={2000}

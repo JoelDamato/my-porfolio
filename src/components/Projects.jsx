@@ -9,7 +9,7 @@ export default function Projects(darkMode) {
   let categories= [
     {"image":"https://i.ibb.co/kmxztP6/2023-06-27.png","description":"Desarolle esta web individualmente, utilizando HTML, CSS, JAVASCRIPT VANILLA. La funcionalidad de la pagina es poder aportar datos a su cliente, filtar por un buscador o check. Ademas de estadisticas y datos de cada evento individualmente,","name":"AMAZING","color":"violet","code":"https://github.com/JoelDamato/Amazing-Events","web":""},
     {"image":"https://i.ibb.co/ZmHvGHN/2023-06-27-3.png","description":"Desarrollo de una web, aplicando metodología AGILE para la organización del trabajo en grupo. Utilizamos tecnologías HTML, CSS, Boostrap, los datos del producto fueron consumidos de la API provista por el cliente. Dentro de las funcionalidades de la web, generamos una página dinámica, seccionada en hogar, juguetes, farmacia, contacto y forma de pago. Además, incorporamos la opción de agregar o quitar productos al carrito de compras.","name":"PETSHOP","color":"gray","code":"https://github.com/JoelDamato/Petshop-HappyPets","web":"https://pet-shop-ashy.vercel.app/"},
-    {"image":"https://i.ibb.co/CQH2rk6/2023-06-27-4.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINGA","color":"red","code":"https://github.com/JoelDamato/Minga_green_front","web":""},
+    {"image":"https://i.ibb.co/CQH2rk6/2023-06-27-4.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINGA","color":"red","code":"https://github.com/JoelDamato/Minga_green_front","web":"https://minga-verde-front.vercel.app/"},
     {"image":"https://i.ibb.co/m476tqk/2023-06-27-1.png","description":"Web desarrollada en equipo, utilizando la metodología de trabajo AGILE , organizando y distribuyendo tareas en Trello, aplicando diferentes tecnologías para asegurar el correcto funcionamiento de la aplicación, desde el lado Front-end y Back-end. ","name":"MINDTECH","color":"green","code":"https://github.com/JoelDamato/Mindtech-web-front","web":"https://mindtech.store"},
 ]
 
@@ -34,7 +34,7 @@ export default function Projects(darkMode) {
     <div className={` mob:hidden shadow-lg   flex flex-col ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'} rounded-lg w-[22%] min-h-[20%] items-center `}>
     <h6 className="mt-5 text-xl text-center font-semibold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
-     <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5" >
+     <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5 font-semibold" >
         <Button onClick={()=>setCounter(0)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`} >AMAZING</Button>
         <Button onClick={()=>setCounter(1)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`}>PETSHOP</Button>
         <Button onClick={()=>setCounter(2)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`} >MINGA</Button>
@@ -56,15 +56,15 @@ export default function Projects(darkMode) {
 
         <div className="mob:w-[100%] w-[100%] h-[40%] flex flex-col justify-center items-center p-[1rem]">
           <h1 className="p-2  text-[2rem] rounded-lg tracking-widest font-montserrat"  > {categories[counter]?.name.charAt(0).toUpperCase()+categories[counter]?.name.slice(1)}</h1>
-          <p className=" text-[0.7rem] lg:text-[1rem]">
+          <p className="font-semibold text-[0.7rem] lg:text-[1rem]">
             {categories[counter]?.description}
           </p>
           <div class="mt-5 inline-flex">
-<a href={categories[counter]?.code}>  <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`}>
+<a href={categories[counter]?.code}>  <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-700 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`}>
     Codigo
   </button></a>
 
-  <a href={categories[counter]?.web}> <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-6 rounded-l`}>
+  <a href={categories[counter]?.web}> <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-700 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-6 rounded-l`}>
     Web
   </button></a>
  

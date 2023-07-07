@@ -3,6 +3,7 @@ import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
 import Contacto from "../components/Contacto";
+import TypeWriterEffect from 'react-typewriter-effect';
 
 import { Tooltip} from "@material-tailwind/react";
 
@@ -29,6 +30,7 @@ export default function Home() {
   }
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
   const handleSeeMore = () => {
     const newScrollPosition = window.innerHeight;
     window.scrollTo({
@@ -37,6 +39,32 @@ export default function Home() {
     });
     setScrollPosition(newScrollPosition);
   };
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+
+    if (scrollTop > 800) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Función para hacer scroll hasta el principio de la página
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // Agregar el event listener para manejar el scroll
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const myRef = document.querySelector('.scrollable-div')
   return (
     <>
 
@@ -77,15 +105,33 @@ export default function Home() {
               <div className="flex flex-col items-center  w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <img className=" w-[50%] mt-[-10%]" src="https://i.ibb.co/tYyMHkc/J.png" alt="" />
 
-                <div className={`pt-2 w-[100%] ${darkMode ? 'bg-black/80 border-[1px] border-violet-950 ' : ' bg-white/50'} flex flex-col items-center rounded-lg shadow-lg `}>
+                <div className={`pt-2 w-[100%] ${darkMode ? 'bg-black/80 border-[1px] border-violet-950 ' : ' bg-white/50'} flex flex-col text-center items-center justify-center rounded-lg shadow-lg `}>
 
-                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-5xl  text-black`}>
-                    Full Stack Developer
+                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-3xl flex justify-center font-montserrat  text-black`}>
+                  <TypeWriterEffect
+        hideCursorAfterText="false"
+        startDelay={2000}
+        cursorColor="#3F3D56"
+        multiText={[
+          'Hola! Soy',
+          'FULL STACK DEVELOPER',
+
+        ]}
+        multiTextDelay={2000}
+        typeSpeed={100}
+      />
                   </p>
-                  <h1 className={`${darkMode ? ' text-violet-700' : ''} mob:text-lg mob:ml-3 tracking-[20px] text-black font-bold text-5xl shadow-lg `}>
-                    DAMATO JOEL
+                  <h1 className={`${darkMode ? ' text-violet-700' : ''} mob:text-lg mob:ml-3 font-montserrat  text-black font-bold text-5xl shadow-lg `}>
+                  <p><TypeWriterEffect
+            startDelay={3200}
+            cursorColor="black"
+            hideCursorAfterText="true"
+            text="DAMATO JOEL"
+            typeSpeed={100}
+            scrollArea={myRef}
+         
+          /></p>
                   </h1>
-                  <img className="mob:hidden absolute right-[6vw]  lg:right-[21vw] w-[7%] 2xl:right-[14vw] " src="https://images.credly.com/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png" alt="" />
 
                   <button
                     onClick={handleSeeMore}
@@ -157,6 +203,16 @@ export default function Home() {
           <Contacto dark={darkMode} />
 
         </div>
+        <button
+      className={`fixed bottom-4 right-3  ${darkMode ? "bg-black/50 border-[1px] border-violet-950 text-violet-800" : " text-white bg-gray-500"} ${isVisible ? "opacity-100" : "opacity-0"}  py-2 px-4 rounded-full transition-opacity `}
+      
+      onClick={scrollToTop}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+</svg>
+
+    </button>
 
       </div>
      

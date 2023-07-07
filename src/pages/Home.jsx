@@ -3,7 +3,7 @@ import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
 import Contacto from "../components/Contacto";
-import TypeWriterEffect from 'react-typewriter-effect';
+
 
 import { Tooltip} from "@material-tailwind/react";
 
@@ -108,30 +108,11 @@ export default function Home() {
                 <div className={`pt-2 w-[100%] ${darkMode ? 'bg-black/80 border-[1px] border-violet-950 ' : ' bg-white/50'} flex flex-col text-center items-center justify-center rounded-lg shadow-lg `}>
 
                   <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-lg sm:text-3xl flex justify-center font-montserrat  text-black`}>
-                  <TypeWriterEffect
-        hideCursorAfterText="false"
-        startDelay={2000}
-        cursorColor="#3F3D56"
-        multiText={[
-          'Hola! Soy',
-          'FULL STACK DEVELOPER',
+                 
+          FULL STACK DEVELOPER
 
-        ]}
-        multiTextDelay={2000}
-        typeSpeed={100}
-      />
+        
                   </p>
-                  <h1 className={`${darkMode ? ' text-violet-700' : ''} mob:text-lg mob:ml-3 font-montserrat  text-black font-bold text-5xl shadow-lg `}>
-                  <p><TypeWriterEffect
-            startDelay={3200}
-            cursorColor="black"
-            hideCursorAfterText="true"
-            text="DAMATO JOEL"
-            typeSpeed={100}
-            scrollArea={myRef}
-         
-          /></p>
-                  </h1>
 
                   <button
                     onClick={handleSeeMore}

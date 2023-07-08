@@ -65,6 +65,7 @@ export default function Home() {
     };
   }, []);
   const myRef = document.querySelector('.scrollable-div')
+  
   return (
     <>
 
@@ -107,11 +108,11 @@ export default function Home() {
 
                 <div className={`pt-2 w-[100%] ${darkMode ? 'bg-black/80 border-[1px] border-violet-950 ' : ' bg-white/50'} flex flex-col text-center items-center justify-center rounded-lg shadow-lg `}>
 
-                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50  mt-4 text-lg sm:text-3xl flex justify-center font-montserrat  text-black`}>
-                 
-          FULL STACK DEVELOPER
 
-        
+                  <p className={` ${darkMode ? ' text-violet-700' : ''} z-50 flex flex-col  mt-4 text-lg sm:text-3xl  items-center font-montserrat  text-black`}>
+                  <h2 className="font-montserrat font-semibold text-2xl tracking-[10px] ">FULL STACK DEVELOPER</h2>
+                  <h3  className="font-montserrat font-semibold tracking-[5px] ">DAMATO JOEL</h3>
+
                   </p>
 
                   <button
@@ -156,9 +157,9 @@ export default function Home() {
           darkMode ? 'translate-x-8' : 'translate-x-1 '
         } bg-white`}
       >
-        {darkMode ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        {darkMode ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="hover:animate-spin w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-    </svg>:      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    </svg>:      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="hover:animate-spin w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
 </svg>}
    
@@ -189,7 +190,7 @@ export default function Home() {
       
       onClick={scrollToTop}
     >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="animate-pulse w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
 </svg>
 

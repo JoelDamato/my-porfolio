@@ -46,11 +46,11 @@ export default function About(darkMode) {
 
             <div className="flex mob:flex-col items-center">
          
-            <Avatar className={`rounded-full  p-0.5 border-[2px] hover:transition duration-500 ${darkMode.dark ? "border-violet-900 opacity-70":  "border-black"} w-[10vw] mob:w-[30%] mob:mt-5 `} src="https://i.ibb.co/dPzzCSw/1685723210690.jpg" withBorder={true} />
+            <Avatar className={` rounded-full  p-0.5 border-[2px] hover:transition duration-500 ${darkMode.dark ? "border-violet-900 opacity-70":  "border-black"} w-[10vw] mob:w-[30%] mob:mt-5 `} src="https://i.ibb.co/dPzzCSw/1685723210690.jpg" withBorder={true} />
              
               <div className="flex flex-col">
                 <p className="p-4 mt-2 mb-4 text-lg  text-justify font-semibold">
-                  <p >Me dicen J y tengo 27 años.Soy Desarrollador Full Stack, especializado en MERN
+                  <p >Me dicen J y tengo 27 años. Soy Desarrollador Full Stack, especializado en MERN
             (Mongo, Express, React y Node).
             Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es una forma de facilitar la vida humana, está presente en todo lo que hacemos.
           
@@ -60,7 +60,7 @@ export default function About(darkMode) {
               </div>
             </div>
             <div className='w-full'>
-               <Button onClick={() => handleOpen("sm")} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-gray-800'} shadow-lg  hover:bg-indigo-700/60  font-bold py-2 px-4 rounded-l`} variant="gradient">
+               <Button onClick={() => handleOpen("sm")} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg    font-bold py-2 px-4 rounded-l`} variant="gradient">
           CERTIFICADO FULL STACK
         </Button>
         <Dialog

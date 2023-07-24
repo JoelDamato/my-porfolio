@@ -60,7 +60,9 @@ export default function About(darkMode) {
              
               <div className="flex flex-col">
                 <p className="p-4 mt-2 mb-4 text-lg  text-justify font-semibold">
+
                   <p >Me dicen J y tengo 27 años. Soy Desarrollador Full Stack, especializado en MERN
+
             (Mongo, Express, React y Node).
             Decidí redirigir mi carrera hacia el mundo de la programación, que para mí es una forma de facilitar la vida humana, está presente en todo lo que hacemos.
           

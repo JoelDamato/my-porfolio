@@ -20,7 +20,7 @@ export default function Carousel( darkMode ) {
     const settings = {
       
       infinite: true,
-      slidesToShow: isMobile ? 3 : 4,
+      slidesToShow: isMobile ? 3 : 5,
       slidesToScroll: 1,
       autoplay: true,
       speed: 3000,
@@ -62,6 +62,16 @@ export default function Carousel( darkMode ) {
                             alt=""
                         />
                         </Tooltip>
+                        <Tooltip  content="NEXT" placement="bottom">
+                        <img
+                            className="w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+                            src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png"
+                            alt=""
+                        />
+                        </Tooltip>
+
+
+
                         
                     
                         <Tooltip content="JAVASCRIPT" placement="bottom">
@@ -212,6 +222,14 @@ export default function Carousel( darkMode ) {
  
    
  <Slider {...settings} >
+
+ <Tooltip content="VISUAL" placement="bottom">
+                        <img
+                            className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+                            src="https://logowik.com/content/uploads/images/visual-studio-code7642.jpg"                            alt=""
+
+                        />
+                        </Tooltip>
                         <Tooltip content="POSTMAN" placement="bottom">
                         <img
                             className="rounded-full w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"

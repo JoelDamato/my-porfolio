@@ -16,7 +16,9 @@ export default function About(darkMode) {
   const [size, setSize] = useState(null);
 
   const handleDownload = () => {
-    const fileURL = 'https://portfolio-damatojoel.vercel.app/src/images/cv.pdf'; // Ruta relativa al archivo PDF
+
+    const fileURL = 'https://drive.google.com/file/d/1f2z1bw-RHcIhK8LGjIAEiOv0gEoo-NE7/view?usp=sharing'; // Ruta relativa al archivo PDF
+
   
     // Usar FileSaver.js para descargar el archivo
     saveAs(fileURL, 'cv.pdf');
@@ -74,7 +76,7 @@ export default function About(darkMode) {
 
             <div className='w-full gap-2 sm:flex sm:justify-evenly'>
             <Button onClick={handleDownload} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg    font-bold py-2 px-4 rounded-l`} variant="gradient">
-          DESCARGAR CV
+          VER CV
         </Button>
                <Button onClick={() => handleOpen("sm")} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} mt-1 shadow-lg    font-bold py-2 px-4 rounded-l`} variant="gradient">
 

@@ -71,7 +71,9 @@ export default function Carousel( darkMode ) {
                         </Tooltip>
                         <Tooltip  content="NEXT" placement="bottom">
                         <img
+
                             className="border-[1px] border-black rounded-full p-1 w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+
                             src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png"
                             alt=""
                         />
@@ -237,7 +239,9 @@ src="https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.p
 
  <Tooltip content="VISUAL" placement="bottom">
                         <img
+
                             className="border-[1px] border-black rounded-full p-1 w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+
                             src="https://logowik.com/content/uploads/images/visual-studio-code7642.jpg"                            alt=""
 
                         />

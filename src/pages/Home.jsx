@@ -77,14 +77,14 @@ export default function Home() {
         <div className="z-10 fixed top-5 ml-1">
           <div className={` ${darkMode ? ' text-white bg-black/60 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-lg w-10 p-1 `} >
             <Tooltip content="WHATSAPP" placement="right">
-              <a aria-label="Chat on WhatsApp" href="https://wa.me/+5491153743607"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
+              <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+5491153743607"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
             </Tooltip>
             <Tooltip content="LINKEDIN" placement="right">
-              <a aria-label="Linkedin" href="https://www.linkedin.com/in/joel-damato-79a93026a/"><img alt="linkedin" src="https://cdn-icons-png.flaticon.com/256/174/174857.png" className='w-[5vh]' />
+              <a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/joel-damato-79a93026a/"><img alt="linkedin" src="https://cdn-icons-png.flaticon.com/256/174/174857.png" className='w-[5vh]' />
               </a>
             </Tooltip>
             <Tooltip content="GITHUB" placement="right">
-              <a aria-label="Github" href="https://github.com/JoelDamato"><img alt="github" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" className='w-[5vh]' />
+              <a aria-label="Github" target="_blank" href="https://github.com/JoelDamato"><img alt="github" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" className='w-[5vh]' />
               </a>
             </Tooltip>
 

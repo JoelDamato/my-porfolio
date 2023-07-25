@@ -75,7 +75,7 @@ export default function Home() {
       <div className= {`font-montserrat ${darkMode ? 'bg-gradient-to-r from-black via-violet-950 to-black ' : 'bg-gradient-to-r from-gray-400 via-gray-500 to-gray-400'} `}>
 
         <div className="z-10 fixed top-5 ml-1">
-          <div className={` ${darkMode ? ' text-white bg-violet-800/50 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-2xl w-10 p-1 `} >
+          <div className={` ${darkMode ? ' text-white bg-black/60 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-lg w-10 p-1 `} >
             <Tooltip content="WHATSAPP" placement="right">
               <a aria-label="Chat on WhatsApp" href="https://wa.me/+5491153743607"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
             </Tooltip>
@@ -92,11 +92,11 @@ export default function Home() {
 
         </div>
 
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
+        <div className="relative pt-16 pb-35 flex content-center items-center justify-center"
           style={{
-            minHeight: "120vh"
+            minHeight: "105vh"
           }}>
-          <div className={` absolute top-0 w-full h-full ${darkMode? "opacity-50 ":""} bg-center bg-cover`}
+          <div className={` absolute top-0 w-full h-[100vh] ${darkMode? "opacity-50 ":""} bg-center bg-cover`}
             style={{
               backgroundImage: "url('https://i.ibb.co/GtRb0hx/fondo.png')"
             }}>
@@ -120,7 +120,7 @@ export default function Home() {
 
                   <button
                     onClick={handleSeeMore}
-                    className={`${darkMode ? ' bg-black text-violet-800 border-[1px] border-gray-600/20' : 'bg-white text-black'} animate-bounce  rounded-full mt-5 p-1 mb-[-2%]`}
+                    className={`${darkMode ? ' bg-black text-violet-900 border-[2px] border-violet-900/60' : 'bg-white text-black'} animate-bounce  rounded-full mt-5 p-1 mb-[-2%]`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@ export default function Home() {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-8 h-8"
                     >
                       <path
                         strokeLinecap="round"
@@ -141,13 +141,8 @@ export default function Home() {
                 </div>
               </div>
 
-            </div>
-          </div>
-        </div>
-
-        <section className="mob:mt-[-25%] relative w-full min-h-[100%] pt-5  pb-10 mt-[-5%] mob:flex mob:flex-col mob:items-center">
- <div className="w-full h-[10vh] pb-4  flex justify-center items-center ">
-  <div className={`flex justify-center gap-2 items-center rounded-lg p-2 ${darkMode ? 'bg-gray-700/20 border-[1px] border-violet-950 text-violet-800' : 'bg-white'}`}>
+              <div className="mt-5 w-full h-[10vh] pb-4  flex justify-center items-center ">
+  <div className={`flex justify-center gap-2 items-center rounded-lg p-2 ${darkMode ? 'bg-black/70 border-[1px] border-violet-950 text-violet-800' : 'bg-white/50'}`}>
   Modo Dark 
  <button
       className={`flex items-center justify-between w-16 h-8 rounded-full p-1 transition-colors ${
@@ -170,6 +165,13 @@ export default function Home() {
     </button>
     </div>
         </div>
+
+            </div>
+          </div>
+        </div>
+
+        <section className="mob:mt-[-5%] relative w-full min-h-[100%]   pb-10  mob:flex mob:flex-col mob:items-center">
+
           <About dark={darkMode} />
           <Carousel dark={darkMode} />
           <div className="gap-2 mt-5 flex justify-center w-full">

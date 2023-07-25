@@ -42,9 +42,9 @@ export default function Projects(darkMode) {
       </ButtonGroup>
     </div>
 
-      <div className={` mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-lg items-center shadow-lg w-[70.7%] h-[50vh] ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-black'} `}>
+      <div className={` p-5 gap-1 mob:h-[50%] mob:w-[90%] flex row mob:flex-col justify-evenly rounded-lg items-center shadow-lg w-[70.7%] h-[50vh] ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 ' : 'bg-white/80 text-black'} `}>
         
-        <div className={`mob:hidden self-center rounded-full  ${darkMode.dark? 'bg-violet-900 text-black':'bg-white'}`}>
+        <div className={` mob:hidden self-center rounded-full  ${darkMode.dark? 'bg-violet-900 text-black':'bg-white'}`}>
 
         <img className="w-[3vw] mob:w-[10%]" src="https://i.ibb.co/CQMXb3w/angulo-doble-pequeno-izquierdo.png" onClick={restar} alt="" />
         </div>

@@ -42,6 +42,7 @@ export default function Carousel( darkMode ) {
 </svg>
 </h6>
 
+<div className="w-[115%] sm:w-[100%]">
 
               <ButtonGroup className= "bg-black  rounded-lg mb-5" fullWidth>
       <Button onClick={()=>setStack("Front")} className={`${darkMode.dark  ? "border-violet-950 text-violet-800 hover:bg-violet-600/20" :"hover:bg-white/20"} ${stack === "Front"? `${darkMode.dark ? "bg-violet-600/20" :"bg-white/20"}` :""}  `}>Front-End</Button>
@@ -289,7 +290,7 @@ src="https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.p
       </Accordion>
 : ""}
 
-
+</div>
         </div>
       </div>
     );

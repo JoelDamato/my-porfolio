@@ -3,9 +3,10 @@ import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
 import Contacto from "../components/Contacto";
-
-
+import MaquinaEscribir from '../components/MaquinaEscribir';
 import { Tooltip} from "@material-tailwind/react";
+
+
 
 export default function Home() {
 
@@ -65,7 +66,9 @@ export default function Home() {
     };
   }, []);
   const myRef = document.querySelector('.scrollable-div')
-  
+  const textoMaquina = " ¡Hola! Soy D'amato Joel";
+  const intervaloEscritura = 150; 
+
   return (
     <>
 
@@ -110,8 +113,8 @@ export default function Home() {
 
 
                   <p className={` ${darkMode ? ' text-violet-700' : ''} z-50 flex flex-col  mt-4 text-lg sm:text-3xl  items-center font-montserrat  text-black`}>
+                  <MaquinaEscribir texto={textoMaquina} intervalo={intervaloEscritura} />
                   <h2 className="font-montserrat font-semibold text-2xl tracking-[10px] ">FULL STACK DEVELOPER</h2>
-                  <h3  className="font-montserrat font-semibold tracking-[5px] ">DAMATO JOEL</h3>
 
                   </p>
 

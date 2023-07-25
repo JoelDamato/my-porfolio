@@ -32,13 +32,13 @@ export default function Projects(darkMode) {
     <>
     
     <div className={` mob:hidden shadow-lg   flex flex-col ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'} rounded-lg w-[22%] min-h-[20%] items-center `}>
-    <h6 className="mt-5 text-xl text-center font-semibold font-montserrat tracking-widest ">
+    <h6 className="mt-5 text-xl text-center font-bold font-montserrat tracking-widest ">
                      MIS PROYECTOS</h6>
      <ButtonGroup variant="text" className="mt-5 flex flex-col w-[80%] gap-5 font-semibold" >
-        <Button onClick={()=>setCounter(0)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-white/80 text-gray-800  hover:bg-indigo-700/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`} >AMAZING</Button>
-        <Button onClick={()=>setCounter(1)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-white/80 text-gray-800  hover:bg-indigo-700/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`}>PETSHOP</Button>
-        <Button onClick={()=>setCounter(2)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-white/80 text-gray-800  hover:bg-indigo-700/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`} >MINGA</Button>
-        <Button onClick={()=>setCounter(3)} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-white/80 text-gray-800  hover:bg-indigo-700/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`}>MINDTECH</Button>
+        <Button onClick={()=>setCounter(0)} className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`} >AMAZING</Button>
+        <Button onClick={()=>setCounter(1)} className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`}>PETSHOP</Button>
+        <Button onClick={()=>setCounter(2)} className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`} >MINGA</Button>
+        <Button onClick={()=>setCounter(3)} className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60 '} shadow-lg   font-bold py-2 px-4 rounded-l`}>MINDTECH</Button>
       </ButtonGroup>
     </div>
 
@@ -60,11 +60,11 @@ export default function Projects(darkMode) {
             {categories[counter]?.description}
           </p>
           <div class="mt-5 inline-flex">
-<a href={categories[counter]?.code}>  <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-700 hover:bg-gray-600/20 ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg    font-bold py-2 px-4 rounded-l`}>
+<a href={categories[counter]?.code}>  <button className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-700 hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60'} shadow-lg    font-semibold py-2 px-4 rounded-lg`}>
     Codigo
   </button></a>
 
-  <a href={categories[counter]?.web}> <button className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-700  hover:bg-gray-600/20 ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg font-bold py-2 px-6 rounded-l`}>
+  <a href={categories[counter]?.web}> <button className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-700  hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60'} shadow-lg font-semibold py-2 px-6 rounded-lg`}>
     Web
   </button></a>
  

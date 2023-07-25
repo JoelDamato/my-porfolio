@@ -35,9 +35,14 @@ export default function Carousel( darkMode ) {
         <div className="w-full flex justify-center">
       <div className={`flex flex-col items-center shadow-lg rounded-lg w-[93.2%] mob:w-[90%]  p-10 ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'}`}>
 
- <h6 className="text-xl pb-5 text-center font-montserrat font-semibold tracking-[1vw]   ">
 
-              TECNOLOGIAS</h6>
+ <h6 className="flex gap-2 items-center text-xl pb-5 text-center font-montserrat font-semibold tracking-[1vw]   ">
+
+              TECNOLOGIAS <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+</svg>
+</h6>
+
 
 
               <ButtonGroup className= "bg-black  rounded-lg mb-5" fullWidth>

@@ -16,10 +16,10 @@ export default function About(darkMode) {
   const [size, setSize] = useState(null);
 
   const handleDownload = () => {
-    const fileURL = 'https://drive.google.com/file/d/1f2z1bw-RHcIhK8LGjIAEiOv0gEoo-NE7/view?usp=sharing'; // Ruta relativa al archivo PDF
+    const fileURL = 'https://drive.google.com/u/0/uc?id=1f2z1bw-RHcIhK8LGjIAEiOv0gEoo-NE7&export=download'; // Ruta relativa al archivo PDF
   
     // Usar FileSaver.js para descargar el archivo
-    saveAs(fileURL, 'cv.pdf');
+    saveAs(fileURL, 'CV-Damato-Joel.pdf');
   };
   
   
@@ -71,12 +71,18 @@ export default function About(darkMode) {
            
               </div>
             </div>
-            <div className='w-full gap-2 sm:flex sm:justify-evenly'>
-            <Button onClick={handleDownload} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg    font-bold py-2 px-4 rounded-l`} variant="gradient">
-          VER CV
+            <div className='w-full gap-2 flex flex-col items-center justify-center sm:flex-row sm:justify-evenly'>
+            <Button onClick={handleDownload} className={` flex gap-1 items-center  ${darkMode.dark ? ' bg-black  text-violet-800 hover:bg-violet-600/10  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg    font-bold h-[2%] rounded-lg`} variant="gradient">
+          DESCARGAR CV <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+</svg>
+
         </Button>
-               <Button onClick={() => handleOpen("sm")} className={` ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800 hover:bg-gray-600/20  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} mt-1 shadow-lg    font-bold py-2 px-4 rounded-l`} variant="gradient">
-          CERTIFICADO FULL STACK
+               <Button onClick={() => handleOpen("sm")} className={`flex gap-1 items-center  ${darkMode.dark ? ' bg-black  text-violet-800 hover:bg-violet-600/10  ' : 'bg-white/80 text-gray-800 hover:bg-indigo-700/60'} shadow-lg    font-bold  rounded-lg`} variant="gradient">
+          CERTIFICADO FULL STACK <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+</svg>
+
         </Button>
         <Dialog
         open={

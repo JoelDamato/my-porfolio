@@ -59,7 +59,8 @@ export default function Projects(darkMode) {
           <p className="font-semibold text-[0.7rem] lg:text-[1rem]">
             {categories[counter]?.description}
           </p>
-          <div class="mt-5 inline-flex">
+
+          <div class="mt-5 gap-5 inline-flex">
 
 <a href={categories[counter]?.code} target="_blank">  <button className={` ${darkMode.dark ? 'bg-black border-[1px] border-violet-950 text-violet-700 hover:bg-gray-600/20 ' : 'bg-black text-white hover:bg-black/60'} shadow-lg    font-semibold py-2 px-4 rounded-lg`}>
     Codigo

@@ -174,7 +174,7 @@ export default function Home() {
 
           <About dark={darkMode} />
           <Carousel dark={darkMode} />
-          <div className="gap-2 mt-5 flex justify-center w-full">
+          <div className="gap-2 pt-[5vh] flex justify-center w-full">
 
             <Projects dark={darkMode} />
            
@@ -184,7 +184,7 @@ export default function Home() {
 
 
 
-        <div className={`flex justify-center  pt-[10vh]`}>
+        <div className={`flex justify-center  pt-[1vh]`}>
 
 
           <Contacto dark={darkMode} />

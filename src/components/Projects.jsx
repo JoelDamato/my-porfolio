@@ -78,7 +78,7 @@ export default function Projects(darkMode) {
         
         <div className={`mob:flex mob:justify-evenly sm:self-center rounded-full `}>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className={` rounded-full sm:hidden w-[3vw] mob:w-[10%] ${darkMode.dark? ' text-black':''}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" onClick={restar} viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className={` rounded-full sm:hidden w-[3vw] mob:w-[10%] ${darkMode.dark? ' text-black':'bg-white'}`}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
 </svg>
 

@@ -33,7 +33,7 @@ export default function Carousel( darkMode ) {
 
     return (
         <div className="w-full flex justify-center">
-      <div className={`flex flex-col items-center shadow-lg rounded-lg w-[93.2%] mob:w-[90%]  p-10 ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-violet-800' : 'bg-white/80'}`}>
+      <div className={`flex flex-col items-center shadow-lg rounded-lg w-[93.2%] mob:w-[90%]  p-10 ${darkMode.dark ? 'bg-gray-700/40 border-[1px] border-violet-950 text-white' : 'bg-white/80'}`}>
 
  <h6 className="flex gap-2 items-center text-xl pb-5 text-center font-montserrat font-semibold tracking-[1vw]   ">
 
@@ -58,7 +58,7 @@ export default function Carousel( darkMode ) {
     <h2
           
           className={`mb-5 text-xl text-center font-montserrat font-semibold border-b-0 transition-colors
-          ${darkMode.dark ? ' text-violet-800 hover:text-black ' : ' text-black hover:text-indigo-700/60'}
+          ${darkMode.dark ? ' text-white hover:text-black ' : ' text-black hover:text-indigo-700/60'}
         }`}
         >
           FRONT-END
@@ -147,7 +147,7 @@ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMuXIKOZAg4Yjpx49EpGZ
     <h2
           
           className={`mb-5  text-xl text-center font-montserrat font-semibold border-b-0 transition-colors 
-          ${darkMode.dark ? ' text-violet-800 hover:text-black ' : ' text-black hover:text-indigo-700/60'}
+          ${darkMode.dark ? ' text-white hover:text-black ' : ' text-black hover:text-indigo-700/60'}
         }`}
         >
           BACK-END
@@ -228,7 +228,7 @@ src="https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.p
     <h2
           
           className={`mb-5  text-xl text-center font-montserrat font-semibold border-b-0 transition-colors 
-           ${darkMode.dark ? ' text-violet-800 hover:text-black ' : ' text-black hover:text-indigo-700/60'}
+           ${darkMode.dark ? ' text-white hover:text-black ' : ' text-black hover:text-indigo-700/60'}
           }`}
         >
           HERRAMIENTAS ADICIONALES
@@ -278,6 +278,22 @@ src="https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.p
 
                             className="border-[1px] border-black rounded-full p-1 w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
                             src="https://git-scm.com/images/logos/logomark-orange@2x.png"                            alt=""
+
+                        />
+                        </Tooltip>
+                        <Tooltip content="ZAPIER" placement="bottom">
+                        <img
+
+                            className="border-[1px] border-black rounded-full p-1 w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+                            src="https://cdn.worldvectorlogo.com/logos/zapier.svg"                            alt=""
+
+                        />
+                        </Tooltip>
+                        <Tooltip content="NOTION" placement="bottom">
+                        <img
+
+                            className="border-[1px] border-black rounded-full p-1 w-[5vw] h-[5vh] mob:h-[7vh] mob:w-[9vw] lg:w-[3vw] lg:h-[3vw]"
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"                            alt=""
 
                         />
                         </Tooltip>

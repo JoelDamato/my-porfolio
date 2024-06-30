@@ -72,12 +72,12 @@ export default function Home() {
   return (
     <>
 
-      <div className= {`font-montserrat ${darkMode ? 'bg-gradient-to-r from-black via-violet-950 to-black ' : 'bg-gradient-to-r from-gray-400 via-gray-500 to-gray-400'} `}>
+      <div className= {`font-montserrat ${darkMode ? ' bg-gradient-to-r from-black via-violet-950 to-black ' : 'bg-gradient-to-r from-gray-400 via-gray-500 to-gray-400'} `}>
 
         <div className="z-10 fixed top-5 ml-1">
           <div className={` ${darkMode ? ' text-white bg-black/60 border-[1px] border-violet-950' : ' text-black bg-white/70 '} z-50  mt-4 text-5xl flex flex-col gap-3 rounded-lg w-10 p-1 `} >
             <Tooltip content="WHATSAPP" placement="right">
-              <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+5491153743607"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
+              <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+5491123965661"><img alt="Chat on WhatsApp" src="https://www.pngplay.com/wp-content/uploads/8/Whatsapp-No-Background.png" className='w-[5vh]' />   </a>
             </Tooltip>
             <Tooltip content="LINKEDIN" placement="right">
               <a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/joel-damato-79a93026a/"><img alt="linkedin" src="https://cdn-icons-png.flaticon.com/256/174/174857.png" className='w-[5vh]' />
@@ -98,7 +98,7 @@ export default function Home() {
           }}>
           <div className={` absolute top-0 w-full h-[100vh] ${darkMode? "opacity-50 ":""} bg-center bg-cover`}
             style={{
-              backgroundImage: "url('https://i.ibb.co/GtRb0hx/fondo.png')"
+              backgroundImage: "url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
             }}>
 
           </div>

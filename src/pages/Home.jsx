@@ -3,7 +3,6 @@ import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Projects from "../components/Projects";
 import Contacto from "../components/Contacto";
-import MaquinaEscribir from '../components/MaquinaEscribir';
 import { Tooltip} from "@material-tailwind/react";
 
 
@@ -66,8 +65,7 @@ export default function Home() {
     };
   }, []);
   const myRef = document.querySelector('.scrollable-div')
-  const textoMaquina = " ¡Hola! Soy D'amato Joel";
-  const intervaloEscritura = 150; 
+  
 
   return (
     <>
@@ -143,7 +141,7 @@ export default function Home() {
 
               <div className="mt-5 w-full h-[10vh] pb-4  flex justify-center items-center ">
   <div className={`flex justify-center gap-2 items-center rounded-lg p-2 ${darkMode ? 'bg-black/70 border-[1px] border-violet-950 text-violet-800' : 'bg-white/50'}`}>
-  Modo Dark 
+  Modo
  <button
       className={`flex items-center justify-between w-16 h-8 rounded-full p-1 transition-colors ${
         darkMode ? 'bg-violet-800' : 'bg-gray-300'
